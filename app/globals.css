@@ -1,0 +1,33 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-blue: hsl(212, 24%, 26%);
+  --mod-blue: hsl(238, 40%, 52%);
+  --err-delete: hsl(358, 79%, 66%);
+  --light-gray-blue: hsl(239, 57%, 85%);
+  --err-delete-active: hsl(357, 100%, 86%);
+  --gray-blue: hsl(211, 10%, 45%);
+  --light-gray: hsl(223, 19%, 93%);
+  --white: hsl(228, 33%, 97%);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: hsl(212, 24%, 26%);
+    --text: hsl(228, 33%, 97%);
+  }
+} */
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
