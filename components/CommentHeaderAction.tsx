@@ -1,6 +1,7 @@
 /** @format */
 
 import React from "react";
+import Image from "next/image";
 
 interface CommentHeaderActionsProps {
   type: "delete" | "edit" | "reply";
@@ -12,7 +13,7 @@ function CommentHeaderAction(props: CommentHeaderActionsProps) {
       type="button"
       className="flex gap-[0.5rem] justify-center items-center"
     >
-      <img src={`\icon-${props.type}.svg`} alt="Reply using this button" />
+      <Image src={`icon-${props.type}.svg`} alt="Reply using this button" width={13} height={13} />
       <h4
         className={`${
           props.type === "delete" ? "text-error" : "text-modblue"
