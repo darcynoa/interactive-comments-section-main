@@ -11,9 +11,14 @@ function CommentHeaderAction(props: CommentHeaderActionsProps) {
   return (
     <button
       type="button"
-      className="flex gap-[0.5rem] justify-center items-center"
+      className="flex gap-[0.5rem] justify-center items-center hover:opacity-50"
     >
-      <Image src={`icon-${props.type}.svg`} alt="Reply using this button" width={13} height={13} />
+      <Image
+        src={`icon-${props.type}.svg`}
+        alt="Reply using this button"
+        width={13}
+        height={13}
+      />
       <h4
         className={`${
           props.type === "delete" ? "text-error" : "text-modblue"
